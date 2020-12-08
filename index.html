@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbca4ba8c9.js" crossorigin="anonymous"></script>
+    <title>Alexander Froelich</title>
+  </head>
+  <body>
+    <section id="header">
+
+      <ul id="menu-list-items">
+        <li class="menu-item" id="menu-about">About</li>
+        <li class="menu-item" id="menu-skills">Skills</li>
+        <li class="menu-item" id="menu-games">Games</li>
+        <li class="menu-item" id="menu-contact">Contact</li>
+      </ul>
+      <div class='header-menu'>
+
+
+
+      </div>
+  </section>
+
+  <section id="intro">
+    <div class='intro-content'>
+      <h1 id="name"> Alexander Froelich </h1>
+      <h2 id="position"></h2>
+      <h3 id='description'>Game Developer with 3+ years of <span>Unity</span> experience.
+        Passionate about gameplay and UI programming, with 2D and 3D knowledge.
+        Proficient in desktop and mobile game development.</h3>
+    </div>
+
+  </section>
+  <section id="skills">
+      <h1 class="section-title"id="skills-title">SKILLS</h1>
+      <div class="skills-content">
+        <div class="skill-box">
+          <div class="title-box">
+            <h1 class="skill-section-title">PROGRAMMING</h1>
+          </div>
+
+            <h2 class="skill-item">C#</h2>
+            <h2 class="skill-item">C++</h2>
+            <h2 class="skill-item">JavaScript/HTML/CSS</h2>
+              <h2 class="skill-item">Swift, Python</h2>
+        </div>
+
+      <div class="skill-box">
+          <div class="title-box">
+            <h1 class="skill-section-title">GAME DEVELOPMENT</h1>
+        </div>
+        <h2 class="skill-item">Unity</h2>
+
+          <h2 class="skill-item unity-item"> UI Development</h2>
+          <h2 class="skill-item">Desktop/Mobile Game Development</h2>
+          <h2 class="skill-item unity-item"> Gameplay Programming</h2>    
+
+      </div>
+
+      <div class="skill-box">
+          <div class="title-box">
+            <h1 class="skill-section-title">LANGUAGES</h1>
+        </div>
+        <h2 class="skill-item">Portuguese</h2>
+
+          <h2 class="skill-item unity-item">English</h2>
+          <h2 class="skill-item">French</h2>
+            <h2 class="skill-item">Spanish</h2>
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+    <section id="games" class="games-horizontal">
+      <h1 class="section-title"id="games-title">GAMES</h1>
+      <div class="card card-vertical" id="castora-card">
+
+        <div class="card-image-section">
+            <img class="game-image " id="castora-image" src="./assets/castora.jpg" alt="gameImage">
+            <button type="button" name="nextImg"  class="image-button button-previous" onclick="nextImage(-1, 'CASTORA')"><</button>
+            <button type="button" name="nextImg"  class="image-button button-next" onclick="nextImage(1, 'CASTORA')">></button>
+        </div>
+
+
+
+
+        <div class="card-text-section" >
+          <h1 class="game-name">Castora</h1>
+          <p>   Local multiplayer game where players need to colaborate to prevent the barrier from being destroyed</p>
+          <div class="game-description achivements" >
+            <div class="achivement">
+              <div class="achivement-icon"><i class="fas fa-award  achivement-icon"></i></div>
+              <div  class="game-description-item">Second Most Voted Game at GGJ 2020 - Curitiba</div>
+            </div>
+            <div class="achivement">
+              <div class="achivement-icon"><i class="fas fa-user-friends"></i></div>
+              <div  class="game-description-item">Local Multiplayer (Cooperative)</div>
+            </div>
+            <div class="achivement">
+              <div  class="achivement-icon"><i class="fas fa-gamepad"></i></div>
+              <div  class="game-description-item">Joysticks Supported</div>
+            </div>
+
+
+          </div>
+
+          <div class="badges">
+
+
+            <div class="made-with-badge">
+              <a href=''>
+                <img id="badge-image-unity" alt='Available On Itch' src='./assets/unity-mwu-white.png'/>
+              </a>
+            </div>
+
+            <div class="play-badge">
+
+              <a href=''>
+                <img id="badge-image" alt='Available On Itch' src='./assets/itchio-logo-white.png'/>
+              </a>
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="card card-vertical" id="ermitao-card">
+        <div class="card-image-section">
+
+            <img class="game-image" id="ermitao-image" src="./assets/ermitaoLogo2.png" alt="gameImage">
+
+            <button type="button" name="nextImg" class="image-button button-previous" onclick="nextImage(-1, 'ERMITAO')"><</button>
+            <button type="button" name="nextImg" class="image-button button-next" onclick="nextImage(1, 'ERMITAO')">></button>
+
+        </div>
+
+
+        <div class="card-text-section">
+
+          <h1 class="game-name">Briga de Ermitão</h1>
+          <p>Local multiplayer game where players tap the button as fast as they can to beat the opponent!</p>
+          <div class="game-description achivements" >
+              <div class="achivement">
+                <div  class="achivement-icon"><i class="fas fa-trophy "></i></div>
+                <div  class="game-description-item"> Most Voted Game at Global Game Jam 2019 - Curitiba</div>
+              </div>
+              <div class="achivement">
+                  <div  class="achivement-icon"><i class="fas fa-user-friends"></i></div>
+                    <div  class="game-description-item">Local Multiplayer (Versus)</div>
+              </div>
+              <div class="achivement">
+                <div  class="achivement-icon"><i class="fas fa-keyboard"></i></div>
+                <div  class="game-description-item">Uses 'Makey Makey' as Input System</div>
+              </div>
+
+          </div>
+
+            <div class="badges">
+
+
+              <div class="made-with-badge">
+                <a href=''>
+                  <img id="badge-image-unity" alt='Available On Itch' src='./assets/unity-mwu-white.png'/>
+                </a>
+              </div>
+
+              <div class="play-badge video-badge">
+                <a href=''>
+                  <!-- <img id="badge-image" alt='Available On Itch' src='./assets/badge-itch-black.png'/> -->
+                  <p> </p>
+                  <i class="fas fa-video video-icon"></i>
+                  <p>Development Video</p>
+                </a>
+
+              </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="card card-vertical" id="satellight-card">
+        <div class="card-image-section">
+            <img class="game-image" id="satellight-image" src="./assets/satellight_splash_mini.png" alt="gameImage">
+            <button type="button" name="nextImg" class="image-button button-previous" onclick="nextImage(-1, 'SATELLIGHT')"><</button>
+            <button type="button" name="nextImg" class="image-button button-next" onclick="nextImage(1, 'SATELLIGHT')">></button>
+        </div>
+
+
+
+        <div class="card-text-section">
+          <h1 class="game-name">Satellight</h1>
+          <p>Satellight is a game where you must manipulate the satellites to take energy from the star to the planets as fast as you can.</p>
+          <div class="game-description achivements" >
+
+              <div class="achivement">
+                  <div  class="achivement-icon">  <i class="fas fa-puzzle-piece"></i></div>
+                    <div  class="game-description-item">Puzzle Game with More Than 40 Levels</div>
+              </div>
+              <div class="achivement">
+                <div  class="achivement-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div  class="game-description-item">Available for Android Devices</div>
+              </div>
+              <div class="achivement">
+                <div  class="achivement-icon"><i class="far fa-comment"></i></div>
+                <div  class="game-description-item">Available in Both English and Portuguese</div>
+              </div>
+
+          </div>
+
+          <div class="badges">
+
+
+            <div class="made-with-badge">
+              <a href=''>
+                <img id="badge-image-unity" alt='Available On Itch' src='./assets/unity-mwu-white.png'/>
+              </a>
+            </div>
+
+            <div class="play-badge">
+              <a href=''>
+                <img id="badge-image" alt='Available On Itch' src='./assets/google-play-badge.png'/>
+              </a>
+
+            </div>
+
+
+        </div>
+
+        </div>
+      </div>
+
+      <div class="card card-vertical" id="terraform-card">
+        <div class="card-image-section">
+          <img class="game-image" id="terraform-image" src="./assets/terraform_splash.jpg" alt="gameImage">
+          <button type="button" name="nextImg" class="image-button button-previous" onclick="nextImage(-1, 'TERRAFORM')"><</button>
+          <button type="button" name="nextImg" class="image-button button-next" onclick="nextImage(1, 'TERRAFORM')">></button>
+        </div>
+
+
+        <div class="card-text-section">
+          <h1 class="game-name">Terraform</h1>
+          <p>   Local multiplayer game where players need to colaborate to prevent the barrier from being destroyed</p>
+          <div class="game-description achivements" >
+            <div class="achivement">
+                <div  class="achivement-icon"><i class="fas fa-desktop"></i></div>
+                <div  class="game-description-item">Shown at SBGames 2017</div>
+            </div>
+            <div class="achivement">
+              <div  class="achivement-icon"><i class="fas fa-user"></i></div>
+              <div  class="game-description-item">Single Player</div>
+            </div>
+            <div class="achivement">
+                <div  class="achivement-icon"><i class="fas fa-user-graduate"></i></div>
+                <div  class="game-description-item">Final Project (Specialization Course)</div>
+            </div>
+
+          </div>
+
+          <div class="badges">
+
+
+            <div class="made-with-badge">
+              <a href=''>
+                <img id="badge-image-unity" alt='Available On Itch' src='./assets/unity-mwu-white.png'/>
+              </a>
+            </div>
+
+            <div class="play-badge">
+              <a href=''>
+                <img id="badge-image" alt='Available On Itch' src='./assets/badge-itch-black.png'/>
+              </a>
+
+            </div>
+
+
+        </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+        <!-- <h1 class="section-title"id="contact-title">CONTACT</h1> -->
+        <div class="contact-content">
+          <div class="contact-box">
+            <div class="contact-title-box">
+              <h1 class="contact-section-title">ALEXANDER FROELICH</h1>
+
+
+            </div>
+              <!-- <h1 class="contact-item-title">Unity Developer</h1> -->
+            <div id="contact-email-box">
+              <h1 class="contact-item-title">Contact</h1>
+
+              <h2 class="contact-item-email">alexfroelich05@gmail.com</h2>
+            </div>
+
+              <div id="contact-links">
+
+                <h2 class="contact-item">  <a href="https://www.linkedin.com/in/alexfroelich/">LinkedIn</a></h2>
+                <h2 class="contact-item"><a href="#">Curriculum</a></h2>
+              </div>
+
+          </div>
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>
