@@ -1,4 +1,4 @@
-console.log("JS WORKING");
+
 //Variables for all Games
 //Castora
 var castoraImages = ['./assets/castora.jpg','./assets/castora_1.png', 'assets/castora_2.png', 'assets/castoraGameOver.jpg'];
