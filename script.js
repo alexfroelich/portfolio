@@ -1,5 +1,10 @@
 
 //Variables for all Games
+//Shooter
+var shooterImages = ['./assets/ShooterStart.jpg','./assets/ShooterHit.jpg', 'assets/ShooterDefeated.jpg', 'assets/ShooterShip.jpg','assets/ShooterOrange.jpg','assets/ShooterPanel.jpg','assets/ShooterRecords.jpg'];
+var shooterImage = document.getElementById('shooter-image');
+var shooterIndex = 0;
+shooterImage.src = shooterImages[shooterIndex];
 //Castora
 var castoraImages = ['./assets/castora.jpg','./assets/castora_1.png', 'assets/castora_2.png', 'assets/castoraGameOver.jpg'];
 var castoraImage = document.getElementById('castora-image');
@@ -26,6 +31,14 @@ terraformImage.src = terraformImages[terraformIndex];
 function nextImage(value, gameName) {
 
 switch (gameName) {
+    case 'SHOOTER':
+      shooterIndex += value;
+      if(shooterIndex >= shooterImages.length)
+        shooterIndex = 0;
+      if(shooterIndex < 0)
+        shooterIndex = shooterImages.length - 1;
+        shooterImage.src = shooterImages[shooterIndex];
+    break;
     case 'CASTORA':
       castoraIndex += value;
       if(castoraIndex >= castoraImages.length)

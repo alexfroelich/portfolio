@@ -83,6 +83,65 @@
 
     <section id="games" class="games-horizontal">
       <h1 class="section-title"id="games-title">GAMES</h1>
+
+      <div class="card card-vertical" id="shooter-card">
+
+        <div class="card-image-section">
+            <img class="game-image " id="shooter-image" src="./assets/ShooterStart.jpg" alt="gameImage">
+            <button type="button" name="nextImg"  class="image-button button-previous" onclick="nextImage(-1, 'SHOOTER')"><</button>
+            <button type="button" name="nextImg"  class="image-button button-next" onclick="nextImage(1, 'SHOOTER')">></button>
+        </div>
+
+        <div class="card-text-section" >
+          <h1 class="game-name">3D Shooter (In Development)</h1>
+          <p>Single player 3D game where the player controls a spaceship and needs to destroy the enemies to beat the high score</p>
+          <div class="game-description achivements" >
+            <div class="achivement">
+              <div  class="achivement-icon"><i class="fas fa-user"></i></div>
+              <div  class="game-description-item">Single Player</div>
+            </div>
+            <div class="achivement">
+              <div class="achivement-icon"><i class="fas fa-route"></i></div>
+              <div  class="game-description-item">Enemies movement using NavMesh</div>
+            </div>
+            <div class="achivement">
+              <div  class="achivement-icon"><i class="fas fa-gamepad"></i></div>
+              <div  class="game-description-item">Joysticks Supported</div>
+            </div>
+
+
+          </div>
+
+          <div class="badges">
+
+
+            <div class="made-with-badge">
+              <a href=''>
+                <img id="badge-image-unity" alt='Made With Unity' src='./assets/unity-mwu-white.png'/>
+              </a>
+            </div>
+
+            <div class="play-badge video-badge">
+              <a href='https://youtu.be/xSJ6HySh-TA'>
+               
+              <div class="">
+                <i class="fas fa-video video-icon"></i>
+                <h1 class="video-text">Trailer</h1>
+              </div>
+
+              </a>
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+
+      </div>
+
+
       <div class="card card-vertical" id="castora-card">
 
         <div class="card-image-section">
@@ -90,9 +149,6 @@
             <button type="button" name="nextImg"  class="image-button button-previous" onclick="nextImage(-1, 'CASTORA')"><</button>
             <button type="button" name="nextImg"  class="image-button button-next" onclick="nextImage(1, 'CASTORA')">></button>
         </div>
-
-
-
 
         <div class="card-text-section" >
           <h1 class="game-name">Castora</h1>
@@ -182,7 +238,7 @@
 
               <div class="play-badge video-badge">
                 <a href='https://youtu.be/f_diDa1u7m0'>
-                  <!-- <img id="badge-image" alt='Available On Itch' src='./assets/badge-itch-black.png'/> -->
+                  <!-- https://connect.unity.com/post/5c5224f8edbc2a0020ae9a55 -->
                   <p> </p>
                   <i class="fas fa-video video-icon"></i>
                   <h1>Video</h1>
@@ -258,7 +314,7 @@
 
         <div class="card-text-section">
           <h1 class="game-name">Terraform</h1>
-          <p>   Local multiplayer game where players need to colaborate to prevent the barrier from being destroyed</p>
+          <p>2D side-scroller game where the player defeats enemies and gains new abilities to purify a corrupted planet</p>
           <div class="game-description achivements" >
             <div class="achivement">
                 <div  class="achivement-icon"><i class="fas fa-desktop"></i></div>

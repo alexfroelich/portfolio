@@ -120,34 +120,12 @@ body{
   background-color: var(--color-black);
 
 }
-.header-menu{
 
-  /* width:100%;
-  height: 6vh;
-  align-items: center;
-  display: flex;
-    justify-content: flex-end;
-
-  gap: 1%;
-
-background-color: var(--color-black);
-  margin: auto; */
-}
 .menu-item:hover{
   cursor: pointer;
 }
-#menu-about{
 
-}
-#menu-work{
 
-}
-#menu-contact{
-
-}
-span{
-
-}
 #name{
   margin: auto;
   color: var(--color-white);
@@ -218,9 +196,7 @@ span{
   vertical-align: center;
 }
 
-.unity-item{
-  /* font-size: 4em; */
-}
+
 .skills-content{
 
 
@@ -274,8 +250,10 @@ transition: 0.5s;
 }
 .games-horizontal{
   grid-template-areas:  " games-title games-title "
-                        " castora  ermitao "
-                        " satellight  terraform ";
+                        "shooter  castora   "
+                        "ermitao satellight"
+                        "terraform . "
+                        ;
 
   grid-row-gap: 30px;
   grid-column-gap: 30px;
@@ -289,6 +267,9 @@ transition: 0.5s;
   font-size: 4em;
 }
 
+#shooter-card{
+  grid-area: shooter;
+}
 #castora-card{
   grid-area: castora;
 
@@ -354,9 +335,7 @@ transition: 0.5s;
   margin: 0;
   padding: 0;
 }
-.card-gallery-section{
 
-}
 .card-text-section{
   grid-area: text-section;
   padding: 5%;
@@ -397,13 +376,7 @@ min-height: 50px;
 .card:hover > .achivement{
   color: red;
 }
-.achivement:hover{
 
-}
-.achivement-icon{
-  /* padding-right: 5%; */
-
-}
 
 .game-description-item{
 
@@ -449,7 +422,7 @@ height: auto;
 /* margin: auto; */
 float: center;
 margin: auto;
-grid-auto-columns: 1fr
+grid-auto-columns: 1fr;
 
 grid-gap: 0px;
 grid-template-columns:  repeat(2, 1fr);
@@ -490,18 +463,13 @@ grid-template-rows: repeat(1, 1fr);
   align-content: center;
   margin: auto;
 }
-.video-text{
 
-}
 ul{
   list-style: none;
 
 }
 
-.game-description{
 
-
-}
 #contact{
     width: 100vw;
 }
