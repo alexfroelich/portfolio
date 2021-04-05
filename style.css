@@ -640,9 +640,10 @@ transition: 0.5s;
 
   .games-horizontal{
     grid-template-areas:  " games-title"
-                          " castora"
+                          "shooter"
+                          "castora"
                           "ermitao "
-                          " satellight"
+                          "satellight"
                           "terraform ";
 
     grid-row-gap: 30px;
