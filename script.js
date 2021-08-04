@@ -1,5 +1,10 @@
 
 //Variables for all Games
+//Matchsticks
+var matchSticksImages = ['./assets/matchsticks1.jpg','./assets/matchsticks2.jpg', 'assets/matchsticks3.jpg', 'assets/matchsticks4.jpg','assets/matchsticks5.jpg','assets/matchsticks7.jpg','assets/matchsticks8.jpg'];
+var matchSticksImage = document.getElementById('matchsticks-image');
+var matchSticksIndex = 0;
+matchSticksImage.src = matchSticksImages[matchSticksIndex];
 //Shooter
 var shooterImages = ['./assets/ShooterStart.jpg','./assets/ShooterHit.jpg', 'assets/ShooterDefeated.jpg', 'assets/ShooterShip.jpg','assets/ShooterOrange.jpg','assets/ShooterPanel.jpg','assets/ShooterRecords.jpg'];
 var shooterImage = document.getElementById('shooter-image');
@@ -31,6 +36,14 @@ terraformImage.src = terraformImages[terraformIndex];
 function nextImage(value, gameName) {
 
 switch (gameName) {
+  case 'MATCHSTICKS':
+    matchSticksIndex += value;
+      if(matchSticksIndex >= matchSticksImages.length)
+      matchSticksIndex = 0;
+      if(matchSticksIndex < 0)
+      matchSticksIndex = matchSticksImages.length - 1;
+      matchSticksImage.src = matchSticksImages[matchSticksIndex];
+    break;
     case 'SHOOTER':
       shooterIndex += value;
       if(shooterIndex >= shooterImages.length)

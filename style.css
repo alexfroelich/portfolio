@@ -250,9 +250,9 @@ transition: 0.5s;
 }
 .games-horizontal{
   grid-template-areas:  " games-title games-title "
-                        "shooter  castora   "
-                        "ermitao satellight"
-                        "terraform . "
+                        "matchsticks shooter"
+                        "castora ermitao"
+                        "satellight terraform"
                         ;
 
   grid-row-gap: 30px;
@@ -266,7 +266,9 @@ transition: 0.5s;
   color: var(--color-white);
   font-size: 4em;
 }
-
+#matchsticks-card{
+  grid-area: matchsticks;
+}
 #shooter-card{
   grid-area: shooter;
 }

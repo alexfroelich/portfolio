@@ -37,6 +37,7 @@
     </div>
 
   </section>
+  
   <section id="skills">
       <h1 class="section-title"id="skills-title">SKILLS</h1>
       <div class="skills-content">
@@ -67,11 +68,11 @@
           <div class="title-box">
             <h1 class="skill-section-title">LANGUAGES</h1>
         </div>
-        <h2 class="skill-item">Portuguese</h2>
+        <h2 class="skill-item">Portuguese - Native</h2>
 
-          <h2 class="skill-item unity-item">English</h2>
-          <h2 class="skill-item">French</h2>
-            <h2 class="skill-item">Spanish</h2>
+          <h2 class="skill-item unity-item">English - Advanced</h2>
+          <h2 class="skill-item">French - Intermediate</h2>
+            <h2 class="skill-item">Japanese - Learning</h2>
 
       </div>
 
@@ -84,6 +85,67 @@
     <section id="games" class="games-horizontal">
       <h1 class="section-title"id="games-title">GAMES</h1>
 
+      <div class="card card-vertical" id="matchsticks-card">
+
+        <div class="card-image-section">
+            <img class="game-image " id="matchsticks-image" src="./assets/matchsticks1.jpg" alt="gameImage">
+            <button type="button" name="nextImg"  class="image-button button-previous" onclick="nextImage(-1, 'MATCHSTICKS')"><</button>
+            <button type="button" name="nextImg"  class="image-button button-next" onclick="nextImage(1, 'MATCHSTICKS')">></button>
+        </div>
+
+        <div class="card-text-section" >
+          <h1 class="game-name">MatchSticks - Coffee Break Club</h1>
+          <p>A puzzle game with matchsticks where you move, add or remove sticks to obtain the correct answer before you run out of moves.
+            There are 3 beautiful and original themes to be selected, and some levels contain more than one solution
+          </p>
+          <p> 
+            In this game, I was responsible for all the development: Gameplay, Responsive UI, Save/Load System, Achievement System
+          </p>
+          <div class="game-description achivements" >
+            <div class="achivement">
+              <div  class="achivement-icon"><i class="fas fa-user"></i></div>
+              <div  class="game-description-item">Single Player</div>
+            </div>
+            <div class="achivement">
+              <div class="achivement-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <div  class="game-description-item">60 puzzles</div>
+            </div>
+            <div class="achivement">
+              <div  class="achivement-icon"><i class="fa fa-steam " aria-hidden="true"></i></div>
+              <div  class="game-description-item">Available On Steam (Windows and macOS)</div>
+            </div>
+
+
+          </div>
+
+          <div class="badges">
+
+
+            <div class="made-with-badge">
+              <a href=''>
+                <img id="badge-image-unity" alt='Made With Unity' src='./assets/unity-mwu-white.png'/>
+              </a>
+            </div>
+
+            <div class="play-badge video-badge">
+              <a href='https://store.steampowered.com/app/1614340/Matchsticks__Coffee_Break_Club/'>
+               
+              <div class="">
+                <i class="fa fa-steam fa-3x" aria-hidden="true"></i>
+                <h1 class="video-text">Steam</h1>
+              </div>
+
+              </a>
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+
+      </div>
       <div class="card card-vertical" id="shooter-card">
 
         <div class="card-image-section">
@@ -93,8 +155,13 @@
         </div>
 
         <div class="card-text-section" >
-          <h1 class="game-name">3D Shooter (In Development)</h1>
-          <p>Single player 3D game where the player controls a spaceship and needs to destroy the enemies to beat the high score</p>
+          <h1 class="game-name">3D Shooter</h1>
+          <p>
+            Single player 3D game where the player controls a spaceship and needs to destroy the enemies to beat the high score
+          </p>
+          <p> 
+            In this project I was responsible for all the development: Gameplay, Enemy A.I, UI, Save/Load System, Spaceships Models
+          </p>
           <div class="game-description achivements" >
             <div class="achivement">
               <div  class="achivement-icon"><i class="fas fa-user"></i></div>
@@ -105,8 +172,8 @@
               <div  class="game-description-item">Enemies movement using NavMesh</div>
             </div>
             <div class="achivement">
-              <div  class="achivement-icon"><i class="fas fa-gamepad"></i></div>
-              <div  class="game-description-item">Joysticks Supported</div>
+              <div  class="achivement-icon"><i class="fa fa-cube" aria-hidden="true"></i></div>
+              <div  class="game-description-item">Post Processing and Spaceships Models</div>
             </div>
 
 
@@ -153,6 +220,9 @@
         <div class="card-text-section" >
           <h1 class="game-name">Castora</h1>
           <p>   Local multiplayer game where players need to colaborate to prevent the barrier from being destroyed</p>
+          <p> 
+            In this game, I was responsible for all the development: Gameplay, UI, Save/Load System
+          </p>
           <div class="game-description achivements" >
             <div class="achivement">
               <div class="achivement-icon"><i class="fas fa-award  achivement-icon"></i></div>
@@ -211,6 +281,9 @@
 
           <h1 class="game-name">Briga de Ermitão</h1>
           <p>Local multiplayer game where players tap the button as fast as they can to beat the opponent!</p>
+          <p> 
+            In this game, I was responsible for all the development: Gameplay, UI,Integration with External Input System
+          </p>
           <div class="game-description achivements" >
               <div class="achivement">
                 <div  class="achivement-icon"><i class="fas fa-trophy "></i></div>
@@ -265,6 +338,9 @@
         <div class="card-text-section">
           <h1 class="game-name">Satellight</h1>
           <p>Satellight is a game where you must manipulate the satellites to take energy from the star to the planets as fast as you can.</p>
+          <p> 
+            In this game, I was responsible for all the development: Gameplay, Responsive UI, Save/Load System, Show ADs System
+          </p>
           <div class="game-description achivements" >
 
               <div class="achivement">
@@ -315,6 +391,9 @@
         <div class="card-text-section">
           <h1 class="game-name">Terraform</h1>
           <p>2D side-scroller game where the player defeats enemies and gains new abilities to purify a corrupted planet</p>
+          <p> 
+            In this game, I was responsible for Building the Level, Collectibles, UI and Enemies A.I.
+          </p>
           <div class="game-description achivements" >
             <div class="achivement">
                 <div  class="achivement-icon"><i class="fas fa-desktop"></i></div>
@@ -378,7 +457,7 @@
               <div id="contact-links">
 
                 <h2 class="contact-item">  <a href="https://www.linkedin.com/in/alexfroelich/">LinkedIn</a></h2>
-                <h2 class="contact-item"><a href="https://github.com/alexfroelich/curriculum/blob/main/AlexanderFroelich_Resume.pdf">Curriculum</a></h2>
+                <h2 class="contact-item"><a href="https://github.com/alexfroelich/curriculum/blob/main/AlexanderFroelich_%20Resume.pdf">Curriculum</a></h2>
               </div>
 
           </div>
