@@ -250,9 +250,11 @@ transition: 0.5s;
 }
 .games-horizontal{
   grid-template-areas:  " games-title games-title "
-                        "matchsticks shooter"
-                        "castora ermitao"
-                        "satellight terraform"
+                       
+                        "matchsticks satellight"
+                        "ermitao castora "
+                        "terraform shooter "
+                        "slidingPuzzle ."
                         ;
 
   grid-row-gap: 30px;
@@ -269,9 +271,13 @@ transition: 0.5s;
 #matchsticks-card{
   grid-area: matchsticks;
 }
+#slidingPuzzle-card{
+  grid-area: slidingPuzzle;
+}
 #shooter-card{
   grid-area: shooter;
 }
+
 #castora-card{
   grid-area: castora;
 
@@ -353,6 +359,11 @@ transition: 0.5s;
   border-top-left-radius: var(--card-border-radius);
   border-top-right-radius: var(--card-border-radius);
 
+}
+.vertical-image{
+  height: 781px;
+  width: auto;
+  margin: auto;
 }
 .achivement{
 
@@ -642,10 +653,12 @@ transition: 0.5s;
 
   .games-horizontal{
     grid-template-areas:  " games-title"
-                          "shooter"
-                          "castora"
-                          "ermitao "
                           "satellight"
+                          "matchsticks"
+                          "ermitao "
+                          "castora"
+                          "shooter"
+                          "slidingPuzzle"
                           "terraform ";
 
     grid-row-gap: 30px;

@@ -5,11 +5,17 @@ var matchSticksImages = ['./assets/matchsticks1.jpg','./assets/matchsticks2.jpg'
 var matchSticksImage = document.getElementById('matchsticks-image');
 var matchSticksIndex = 0;
 matchSticksImage.src = matchSticksImages[matchSticksIndex];
+//Sliding Puzzle
+var slidingPuzzleImages = ['./assets/slidingPuzzle1.png','./assets/slidingPuzzle2.png', 'assets/slidingPuzzle3.png', 'assets/slidingPuzzle4.png'];
+var slidingPuzzleImage = document.getElementById('slidingPuzzle-image');
+var slidingPuzzleIndex = 0;
+slidingPuzzleImage.src = slidingPuzzleImages[slidingPuzzleIndex];
 //Shooter
 var shooterImages = ['./assets/ShooterStart.jpg','./assets/ShooterHit.jpg', 'assets/ShooterDefeated.jpg', 'assets/ShooterShip.jpg','assets/ShooterOrange.jpg','assets/ShooterPanel.jpg','assets/ShooterRecords.jpg'];
 var shooterImage = document.getElementById('shooter-image');
 var shooterIndex = 0;
 shooterImage.src = shooterImages[shooterIndex];
+
 //Castora
 var castoraImages = ['./assets/castora.jpg','./assets/castora_1.png', 'assets/castora_2.png', 'assets/castoraGameOver.jpg'];
 var castoraImage = document.getElementById('castora-image');
@@ -44,6 +50,15 @@ switch (gameName) {
       matchSticksIndex = matchSticksImages.length - 1;
       matchSticksImage.src = matchSticksImages[matchSticksIndex];
     break;
+    
+    case 'SLIDINGPUZZLE':
+      slidingPuzzleIndex += value;
+        if(slidingPuzzleIndex >= slidingPuzzleImages.length)
+        slidingPuzzleIndex = 0;
+        if(slidingPuzzleIndex < 0)
+        slidingPuzzleIndex =slidingPuzzleImages.length - 1;
+        slidingPuzzleImage.src =slidingPuzzleImages[slidingPuzzleIndex];
+      break;
     case 'SHOOTER':
       shooterIndex += value;
       if(shooterIndex >= shooterImages.length)
